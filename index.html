@@ -6,88 +6,104 @@
   <title>Nijiati Abulizi | Data Scientist</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-color: #0a0f1c;
+      --accent-color: #38bdf8;
+      --text-color: #e2e8f0;
+      --highlight-color: #fbbf24;
+      --muted-color: #94a3b8;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #0f172a;
-      color: #f1f5f9;
+      background-color: var(--bg-color);
+      color: var(--text-color);
       margin: 0;
       padding: 2rem;
-      line-height: 1.6;
     }
-    h1, h2 {
-      color: #38bdf8;
-    }
-    a {
-      color: #fbbf24;
-      text-decoration: none;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
+
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
+      padding: 2rem;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
     }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
     .info {
-      font-weight: 600;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--muted-color);
       margin-bottom: 1rem;
     }
-    ul {
-      padding-left: 1.2rem;
+
+    a {
+      color: var(--highlight-color);
+      text-decoration: none;
     }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      font-size: 1.4rem;
+      border-bottom: 1px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
     li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Nijiati Abulizi</h1>
-    <p class="info">nijiati.abulizi@ubc.ca | 778-214-5086 | <a href="https://nijiati-abulizi.com" target="_blank">nijiati-abulizi.com</a></p>
-
+    <p class="info">
+      Email: <a href="mailto:nijiati.abulizi@ubc.ca">nijiati.abulizi@ubc.ca</a> &nbsp;|&nbsp;
+      Phone: (778) 214-5086 &nbsp;|&nbsp;
+      <a href="https://www.nijiati-abulizi.com" target="_blank">www.nijiati-abulizi.com</a>
+    </p>
+    
     <section>
       <h2>Professional Summary</h2>
-      <p>Data Scientist and Biochemist specializing in biomedical and omics data analysis to build predictive models for health outcomes. Skilled in machine learning, statistics, and cross-team communication. Committed to ethical and impactful healthcare technology.</p>
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Master of Data Science (MDS)</strong>, UBC, Kelowna, BC (07/2024)<br />Focus: Python, R, SQL, ML, DL, Bayesian Stats, Wrangling, Visualization</li>
-        <li><strong>Master of Biochemistry and Molecular Biology</strong>, UBC, Kelowna, BC (06/2017)<br />Focus: Python, R, Bioinformatics, Experimental Design, Scientific Writing</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Professional Experience</h2>
-      <ul>
-        <li><strong>Research Data Scientist</strong>, Thompson Rivers University, Kamloops (02/2025 – 06/2025)</li>
-        <li><strong>Machine Learning Capstone</strong>, Greenspace Health, Kelowna (05/2024 – 07/2024)</li>
-        <li><strong>Sessional Lecturer</strong>, UBC Okanagan (09/2024 – 12/2024)</li>
-        <li><strong>Research Data Analyst</strong>, University of Calgary, Kelowna (05/2024 – 09/2024)</li>
-        <li><strong>Technology Training Instructor</strong>, UBC Okanagan (05/2024 – 09/2024)</li>
-        <li><strong>Research Data Consultant</strong>, UBC Okanagan (09/2023 – 07/2024)</li>
-        <li><strong>Teaching Lab Technician</strong>, UBC Okanagan (01/2017 – 09/2023)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Publications</h2>
-      <ul>
-        <li><strong>Abulizi et al., 2019</strong>. Gut mucosal proteins... <em>Nutrients</em> (Bioinformatics & Visualization)</li>
-        <li><strong>Mamatjan & Abulizi, 2025</strong>. Misclassified tumors... <em>Electronics</em> (AI for Biomedicine)</li>
-      </ul>
+      <p>
+        Data scientist and biochemist passionate about applying AI and emerging technologies to solve meaningful, real-world problems.
+        I bring experience in machine learning, ethical tech design, and collaborative project work to drive innovation, improve systems,
+        and create lasting impact across sectors.
+      </p>
     </section>
 
     <section>
       <h2>Skills</h2>
       <ul>
-        <li><strong>Languages/Tools:</strong> Python, R, SQL, Java, HTML, JS, Git, LaTeX, AWS</li>
-        <li><strong>ML & Analytics:</strong> Scikit-learn, Pandas, PyTorch, Keras, ETL, Stats, A/B Testing</li>
-        <li><strong>Strengths:</strong> Health outcome modeling, Omics data, APIs, OOP, Hypothesis testing</li>
-        <li><strong>Soft Skills:</strong> Communication, Collaboration, Multilingual (EN, ZH, UG, FR)</li>
+        <li><strong>Languages & Tools:</strong> Python, R, SQL, Git, Jupyter Notebook, LaTeX, VSCode</li>
+        <li><strong>Machine Learning:</strong> Scikit-learn, XGBoost, LightGBM, PyTorch, Keras, Random Forest, Temporal Neural Networks (TCN)</li>
+        <li><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Bayesian Statistics</li>
+        <li><strong>Data Engineering:</strong> ETL pipelines, Data Wrangling, Feature Engineering, Dimensionality Reduction</li>
+        <li><strong>Domain Strengths:</strong> Biomedical data, Mental health modeling, Omics integration, Survival analysis</li>
+        <li><strong>Soft Skills:</strong> Clear communication, Cross-functional teamwork, Teaching & mentorship, Multilingual (EN, CN, UG, FR)</li>
       </ul>
     </section>
   </div>
 </body>
 </html>
+
