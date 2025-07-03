@@ -1,109 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nijiati Abulizi | Data Scientist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --bg-color: #0a0f1c;
-      --accent-color: #38bdf8;
-      --text-color: #e2e8f0;
-      --highlight-color: #fbbf24;
-      --muted-color: #94a3b8;
+      --bg: #0a0f1c;
+      --surface: rgba(15,23,42,0.9);
+      --accent: #38bdf8;
+      --highlight: #fbbf24;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --code-bg: rgba(56,189,248,0.1);
     }
-
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 2rem;
+      margin: 0; padding: 2rem;
+      background: var(--bg);
+      color: var(--text);
+      font-family:'Inter',sans-serif;
+      line-height:1.5;
     }
-
     .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 2rem;
-      background: rgba(15, 23, 42, 0.85);
-      border-radius: 12px;
-      box-shadow: 0 0 40px rgba(56, 189, 248, 0.2);
+      max-width:900px; margin:auto;
+      background: var(--surface);
+      border-radius:12px; padding:2rem;
+      box-shadow:0 0 40px rgba(56,189,248,0.2);
     }
-
-    h1 {
-      font-size: 2.5rem;
-      color: var(--accent-color);
-      margin-bottom: 0.5rem;
-    }
-
-    .info {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--muted-color);
-      margin-bottom: 1rem;
-    }
-
-    a {
-      color: var(--highlight-color);
-      text-decoration: none;
-    }
-
-    section {
-      margin-top: 2rem;
-    }
-
+    h1 { font-size:2.8rem; color:var(--accent); margin:0 0 0.5rem; }
+    .info { margin:0.2rem 0; color:var(--muted); font-weight:500; }
+    .info a { color:var(--highlight); text-decoration:none; }
+    section { margin-top:2rem; }
     h2 {
-      color: var(--accent-color);
-      font-size: 1.4rem;
-      border-bottom: 1px solid var(--accent-color);
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
+      font-size:1.6rem; color:var(--highlight);
+      position:relative; padding-left:2.5rem;
+      margin-bottom:1rem;
     }
-
-    ul {
-      padding-left: 1.25rem;
+    /* Icon backgrounds */
+    h2[data-icon]::before {
+      content: attr(data-icon);
+      position:absolute; left:0; top:0;
+      font-size:1.6rem;
     }
-
-    li {
-      margin-bottom: 0.6rem;
+    ul { padding-left:1.5rem; }
+    li { margin-bottom:0.6rem; }
+    .code {
+      display:inline-block;
+      background:var(--code-bg);
+      padding:0.1rem 0.3rem;
+      border-radius:4px;
+      font-family: 'Source Code Pro', monospace;
     }
-
-    p {
-      line-height: 1.6;
-    }
+    p { margin:0.5rem 0; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Nijiati Abulizi</h1>
-    <p class="info">
-      Email: <a href="mailto:nijiati.abulizi@ubc.ca">nijiati.abulizi@ubc.ca</a> &nbsp;|&nbsp;
-      Phone: (778) 214-5086 &nbsp;|&nbsp;
-      <a href="https://www.nijiati-abulizi.com" target="_blank">www.nijiati-abulizi.com</a>
-    </p>
-    
+    <p class="info">Email: <a href="mailto:nijiati.abulizi@ubc.ca">nijiati.abulizi@ubc.ca</a> | Phone: (778) 214-5086 | <a href="https://www.nijiati-abulizi.com" target="_blank">www.nijiati-abulizi.com</a></p>
+
     <section>
-      <h2>Professional Summary</h2>
-      <p>
-        Data scientist and biochemist passionate about applying AI and emerging technologies to solve meaningful, real-world problems.
-        I bring experience in machine learning, ethical tech design, and collaborative project work to drive innovation, improve systems,
-        and create lasting impact across sectors.
-      </p>
+      <h2 data-icon="🧑‍💻">Professional Summary</h2>
+      <p>Data scientist and biochemist passionate about applying AI and emerging technologies to solve meaningful, real-world problems. I bring experience in machine learning, ethical tech design, and collaborative project work to drive innovation, improve systems, and create lasting impact across sectors.</p>
     </section>
 
     <section>
-      <h2>Skills</h2>
+      <h2 data-icon="🎓">Education</h2>
       <ul>
-        <li><strong>Languages & Tools:</strong> Python, R, SQL, Git, Jupyter Notebook, LaTeX, VSCode</li>
-        <li><strong>Machine Learning:</strong> Scikit-learn, XGBoost, LightGBM, PyTorch, Keras, Random Forest, Temporal Neural Networks (TCN)</li>
-        <li><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn, Statsmodels, Bayesian Statistics</li>
-        <li><strong>Data Engineering:</strong> ETL pipelines, Data Wrangling, Feature Engineering, Dimensionality Reduction</li>
-        <li><strong>Domain Strengths:</strong> Biomedical data, Mental health modeling, Omics integration, Survival analysis</li>
-        <li><strong>Soft Skills:</strong> Clear communication, Cross-functional teamwork, Teaching & mentorship, Multilingual (EN, CN, UG, FR)</li>
+        <li><strong>2023/09–2024/07 | Master of Data Science</strong>, <em>University of British Columbia Okanagan, Kelowna, BC</em>
+          <ul>
+            <li>GPA: 95.6%, Entrance Scholarship: $5,000</li>
+            <li>Capstone: Predictive modeling for mental health, improving PHQ‑9 accuracy by 25%</li>
+            <li>Focus: <span class="code">Python</span>, <span class="code">R</span>, Machine Learning, Deep Learning, Statistical & Bayesian Analysis</li>
+            <li>Projects: Lung Disease Classifier (<span class="code">Keras</span>), Diabetes Prediction (<span class="code">scikit-learn</span>), Milk Quality Prediction</li>
+          </ul>
+        </li>
+        <li><strong>Master of Science in Biochemistry</strong>, <em>University of British Columbia Okanagan</em>
+          <ul>
+            <li>GPA: 92%, Scholarship: CAD $12,000</li>
+            <li>Thesis: The Effects of Lipid Diets on Gut Microbiota</li>
+            <li>Focus: Bioinformatics, Experimental Design, Scientific Writing</li>
+          </ul>
+        </li>
+        <li><strong>Bachelor of Science</strong>, <em>University of British Columbia Okanagan</em>
+          <ul>
+            <li>GPA: 82.7%, Scholarship: CAD $15,000</li>
+            <li>Focus: Medical Concentration</li>
+          </ul>
+        </li>
       </ul>
     </section>
+
+    <section>
+      <h2 data-icon="📑">Publications</h2>
+      <ul>
+        <li><strong>D’Aloisio LD et al., 2024</strong>. The transition from a non‑westernized to westernized gut microbiome… <em>bioRxiv</em>. Analyzed & visualized gut microbiome data using <span class="code">Python</span> & <span class="code">R</span>.</li>
+        <li><strong>D’Aloisio LD et al., 2024</strong>. A Gut Microbiome Transition: The Journey from India to Canada. <em>Journal of the Canadian Association of Gastroenterology</em>. Statistical analysis of microbial changes.</li>
+        <li><strong>Abulizi N et al., 2019</strong>. Gut Mucosal Proteins & Bacteriome… <em>Nutrients</em>; Conducted bioinformatics analysis.</li>
+        <li><strong>Tasnim N et al., 2017</strong>. Linking the Gut Microbial Ecosystem… <em>Frontiers in Microbiology</em>; R-based environmental impact study.</li>
+        <li><strong>DeCoffe D et al., 2016</strong>. Dietary Lipid Type… <em>Journal of Infectious Diseases</em>; Proteomic experiments & data analysis.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-icon="💼">Relevant Work Experience</h2>
+      <ul>
+        <li><strong>02/2025–Present | Research Data Scientist</strong>, Brain Tumor AI Research, Thompson Rivers University
+          <ul>
+            <li>Developed explainable AI models for classification & survival prediction</li>
+            <li>Mentored graduate students on data pipelines & reproducibility</li>
+            <li>Translated AI concepts into accessible insights for cross‑functional teams</li>
+            <li>Built end‑to‑end ML workflows to standardize lab adoption</li>
+          </ul>
+        </li>
+        <li><strong>05/2024–09/2024 | Health Research Data Analyst</strong>, University of Calgary
+          <ul>
+            <li>Analyzed microbiome & demographic data for actionable research insights</li>
+            <li>Conducted db‑RDA analysis to surface key relationships</li>
+            <li>Automated R/Python workflows, boosting efficiency by 40%</li>
+            <li>Presented findings to healthcare stakeholders</li>
+          </ul>
+        </li>
+        <li><strong>05/2024–07/2024 | ML Data Scientist (Capstone)</strong>, GreenspaceHealth
+          <ul>
+            <li>Processed 140k patient records across 14 SQL tables</li>
+            <li>Increased PHQ‑9 prediction accuracy by 30% using RF & TCN</li>
+            <li>Delivered executive summary to professors & CEO</li>
+          </ul>
+        </li>
+        <li><strong>09/2023–07/2024 | Research Data Consultant</strong>, UBC Okanagan
+          <ul>
+            <li>Led Python/R workshops for 30+ researchers</li>
+            <li>Streamlined statistical modeling & visualization workflows</li>
+            <li>One‑on‑one consultations to simplify complex datasets</li>
+          </ul>
+        </li>
+        <li><strong>03/2017–08/2023 | Biochemistry Lab Technician</strong>, UBC Okanagan
+          <ul>
+            <li>Managed lab operations, protocols, & TA training</li>
+            <li>Coordinated educational YouTube content development</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-icon="🧑‍🏫">Teaching Experience</h2>
+      <ul>
+        <li><strong>09/2024–12/2024 | Sessional Lecturer</strong>, UBC Okanagan
+          <ul>
+            <li>Taught R & Python to 37 MDS students; designed labs & exams</li>
+            <li>Created Jupyter Notebooks to simplify complex topics</li>
+          </ul>
+        </li>
+        <li><strong>05/2024–09/2024 | Excel Workshop Instructor</strong>, UBC Okanagan
+          <ul>
+            <li>Designed tailored Excel sessions; increased proficiency by 40%</li>
+          </ul>
+        </li>
+        <li><strong>09/2012–08/2016 | Graduate & Undergraduate TA</strong>, UBC
+          <ul>
+            <li>Led labs, graded assignments, and provided office‑hour support</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-icon="🎤">Presentations & Lectures</h2>
+      <ul>
+        <li><strong>09/2016</strong> UBC Okanagan Biology Graduate Symposium – 2nd Place Poster: The Effects of Lipid Diets on the Gut Microbiome II</li>
+        <li><strong>03/2016</strong> Bioinformatics Guest Lecturer: Omics Methods to Study High‑Fat Diet Effects</li>
+        <li><strong>09/2015</strong> UBC Okanagan Symposium – 1st Place Poster: Lipid Diets & Gut Microbiome I</li>
+        <li><strong>07/2015</strong> Immunology Guest Lecturer: Techniques in Immunology</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-icon="🏆">Awards</h2>
+      <ul>
+        <li>Master of Data Science Entrance Scholarship (CAD $5,000, 2023)</li>
+        <li>Graduate Dean’s Thesis Fellowship (CAD $6,000)</li>
+        <li>UBC Okanagan Graduate Fellowship (CAD $6,000)</li>
+        <li>BC Proteomic Network Training Fund (CAD $4,000)</li>
+        <li>Best Poster Award (Health Science MSc)</li>
+        <li>Golden Key Graduate Scholar Award (USD $10,000)</li>
+        <li>International Student Faculty Awards & Dean’s List</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 data-icon="🤝">Volunteer Experience</h2>
+      <ul>
+        <li><strong>Data Mentorship</strong>, UBC Okanagan (~200h): Mentored MSc/PhD students in R/Python analysis</li>
+        <li><strong>Kelowna Project Literacy</strong> (~260h): Digital literacy & ESL support for seniors</li>
+        <li><strong>BitSize Learning YouTube</strong> (~40h): Created programming & language tutorials</li>
+        <li><strong>Outreach Volunteer</strong>, UBC Okanagan (~450h): Animal care & educational programs</li>
+        <li><strong>Crohn’s & Colitis Kelowna</strong> (~180h): Educational outreach & fundraising</li>
+        <li><strong>Parkinson Recreation Center</strong> (~150h): Assisted in adaptive classes</li>
+      </ul>
+    </section>
+
   </div>
 </body>
 </html>
+
 
